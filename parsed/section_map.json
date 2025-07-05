@@ -1,0 +1,686 @@
+[
+  {
+    "section_title": "1. Introduction",
+    "start_page": 14
+  },
+  {
+    "section_title": "1.1 Purpose and audience of this document",
+    "start_page": 14
+  },
+  {
+    "section_title": "1.2 Definitions",
+    "start_page": 14
+  },
+  {
+    "section_title": "2 System Overview",
+    "start_page": 15
+  },
+  {
+    "section_title": "2.1 Actors",
+    "start_page": 15
+  },
+  {
+    "section_title": "2.2 Components",
+    "start_page": 16
+  },
+  {
+    "section_title": "2.3 Module Description",
+    "start_page": 17
+  },
+  {
+    "section_title": "2.4 Interface Description",
+    "start_page": 18
+  },
+  {
+    "section_title": "3 System Use Cases",
+    "start_page": 20
+  },
+  {
+    "section_title": "3.1 Messaging Sequence",
+    "start_page": 20
+  },
+  {
+    "section_title": "3.2 Data collection and Format Validation",
+    "start_page": 21
+  },
+  {
+    "section_title": "3.2.1 Use case overview",
+    "start_page": 21
+  },
+  {
+    "section_title": "3.2.2 Upload Data",
+    "start_page": 21
+  },
+  {
+    "section_title": "3.2.3 Route File",
+    "start_page": 22
+  },
+  {
+    "section_title": "3.2.4 Perform Transmission Validation",
+    "start_page": 23
+  },
+  {
+    "section_title": "3.2.5 Perform File Format Validation",
+    "start_page": 24
+  },
+  {
+    "section_title": "3.2.6 Provide Feedback",
+    "start_page": 26
+  },
+  {
+    "section_title": "3.2.7 Download file",
+    "start_page": 26
+  },
+  {
+    "section_title": "3.3 Instruments Reference Data processing",
+    "start_page": 27
+  },
+  {
+    "section_title": "3.3.1 Use case overview",
+    "start_page": 27
+  },
+  {
+    "section_title": "3.3.2 Instruments Reference Data records processing overview",
+    "start_page": 28
+  },
+  {
+    "section_title": "3.3.2.1 On the fly processing phase",
+    "start_page": 29
+  },
+  {
+    "section_title": "3.3.2.2 End of day / Post-Processing phase",
+    "start_page": 30
+  },
+  {
+    "section_title": "3.3.3 Perform Reference Data Content Validation",
+    "start_page": 37
+  },
+  {
+    "section_title": "3.3.4 Update the Received Reference Data Table",
+    "start_page": 38
+  },
+  {
+    "section_title": "3.3.5 Update the RCA data table",
+    "start_page": 41
+  },
+  {
+    "section_title": "3.3.6 Determine RCA",
+    "start_page": 43
+  },
+  {
+    "section_title": "3.3.6.1 Overview",
+    "start_page": 43
+  },
+  {
+    "section_title": "3.3.6.2 Determine Applicable RCA determination rule",
+    "start_page": 43
+  },
+  {
+    "section_title": "3.3.6.3 Determine RCA based on \"Date of admission to trading or date of first trade\"",
+    "start_page": 46
+  },
+  {
+    "section_title": "3.3.6.4 Determine RCA based on \u201cDate of request for admission\u201d or \u201cDate of admission to trading or date of first trade\"",
+    "start_page": 48
+  },
+  {
+    "section_title": "3.3.6.5 Determine RCA based on LEI",
+    "start_page": 50
+  },
+  {
+    "section_title": "3.3.6.6 Determine RCA based on the underlying",
+    "start_page": 51
+  },
+  {
+    "section_title": "3.3.6.7 Determine RCA based on reception date time",
+    "start_page": 53
+  },
+  {
+    "section_title": "3.3.6.8 Determine the RCA record of the submitted instrument",
+    "start_page": 54
+  },
+  {
+    "section_title": "3.3.6.9 Determine the RCA record for Equity/Equity-like instruments [Updated #249]",
+    "start_page": 58
+  },
+  {
+    "section_title": "3.3.6.10 Update RCA of derivative instruments",
+    "start_page": 59
+  },
+  {
+    "section_title": "3.3.6.11 Determine the RCA record of derivative instrument",
+    "start_page": 60
+  },
+  {
+    "section_title": "3.3.6.12 Determine the RCA based on the \u201cDate of Admission to trading or date of first trade\u201d of the underlying",
+    "start_page": 61
+  },
+  {
+    "section_title": "3.3.6.13 Transition from current Reference Data System",
+    "start_page": 63
+  },
+  {
+    "section_title": "3.3.6.14 Apply RCA-MIC adjustments",
+    "start_page": 66
+  },
+  {
+    "section_title": "3.3.7 Perform Consistency Validation on instruments reference data [Updated CR #289]",
+    "start_page": 67
+  },
+  {
+    "section_title": "3.3.8 Provide File Feedback",
+    "start_page": 68
+  },
+  {
+    "section_title": "3.3.9 End-of day processing / Apply RCA reassessment result [Updated CR #254]",
+    "start_page": 70
+  },
+  {
+    "section_title": "3.3.10 End-of day processing / Update consistent reference data table",
+    "start_page": 72
+  },
+  {
+    "section_title": "3.3.11 Generate information about rejections",
+    "start_page": 77
+  },
+  {
+    "section_title": "3.4 Tools for ESMA Business Administrators",
+    "start_page": 78
+  },
+  {
+    "section_title": "3.4.1 Submit request to set termination date",
+    "start_page": 78
+  },
+  {
+    "section_title": "3.4.2 Submit request to change RCA_MIC (ESMA Data managers)",
+    "start_page": 80
+  },
+  {
+    "section_title": "3.5 RCA change Management",
+    "start_page": 83
+  },
+  {
+    "section_title": "3.5.1 Overview",
+    "start_page": 83
+  },
+  {
+    "section_title": "3.5.2 User interface for reviewing and acting on RCA change requests and RCA changes following yearly reassessment",
+    "start_page": 83
+  },
+  {
+    "section_title": "3.5.3 Yearly RCA Reassessment for Equities",
+    "start_page": 86
+  },
+  {
+    "section_title": "3.5.4 Change of RCA_MIC (for NCA\u2019s)",
+    "start_page": 88
+  },
+  {
+    "section_title": "3.5.5 Submit request to change RCA",
+    "start_page": 90
+  },
+  {
+    "section_title": "3.5.6 Review and act on RCA change request",
+    "start_page": 93
+  },
+  {
+    "section_title": "3.5.7 Review and act on Yearly reassessment results",
+    "start_page": 96
+  },
+  {
+    "section_title": "3.6 Instruments Reference Data Distribution",
+    "start_page": 98
+  },
+  {
+    "section_title": "3.6.1 Use Case Overview",
+    "start_page": 98
+  },
+  {
+    "section_title": "3.6.2 Create and distribute Full File",
+    "start_page": 98
+  },
+  {
+    "section_title": "3.6.3 Create and distribute Cancellations Full File",
+    "start_page": 100
+  },
+  {
+    "section_title": "3.6.4 Create and distribute Delta File",
+    "start_page": 101
+  },
+  {
+    "section_title": "3.6.5 Create and distribute invalid records File",
+    "start_page": 103
+  },
+  {
+    "section_title": "3.7 Instruments Reference Data Publication",
+    "start_page": 105
+  },
+  {
+    "section_title": "3.7.1 Overview",
+    "start_page": 105
+  },
+  {
+    "section_title": "3.7.2 Create Public full file",
+    "start_page": 106
+  },
+  {
+    "section_title": "3.7.3 Create Public Cancellations full file",
+    "start_page": 107
+  },
+  {
+    "section_title": "3.7.4 Create Public delta file",
+    "start_page": 108
+  },
+  {
+    "section_title": "3.7.5 Publish instrument reference data",
+    "start_page": 109
+  },
+  {
+    "section_title": "3.7.6 Search and export public instruments reference data",
+    "start_page": 111
+  },
+  {
+    "section_title": "3.7.7 Download Full/delta public files",
+    "start_page": 113
+  },
+  {
+    "section_title": "3.8 Additional Reference Data Management",
+    "start_page": 114
+  },
+  {
+    "section_title": "3.8.1 LEI and ISO Reference data Management",
+    "start_page": 114
+  },
+  {
+    "section_title": "3.8.1.1 Use cases overview",
+    "start_page": 114
+  },
+  {
+    "section_title": "3.8.1.2 Update LEI reference data table",
+    "start_page": 115
+  },
+  {
+    "section_title": "3.8.1.3 Update Countries reference data table",
+    "start_page": 116
+  },
+  {
+    "section_title": "3.8.1.4 Update Currencies reference data table",
+    "start_page": 118
+  },
+  {
+    "section_title": "3.8.1.5 Update MIC reference data table",
+    "start_page": 120
+  },
+  {
+    "section_title": "3.8.1.6 Update \u201cList of valid CFI codes table\u201d",
+    "start_page": 123
+  },
+  {
+    "section_title": "3.8.2 Non-working day data Management",
+    "start_page": 123
+  },
+  {
+    "section_title": "3.8.2.1 Use cases overview",
+    "start_page": 123
+  },
+  {
+    "section_title": "3.8.2.2 Non-working day data Collection",
+    "start_page": 124
+  },
+  {
+    "section_title": "3.8.2.3 Update Reporting calendar",
+    "start_page": 125
+  },
+  {
+    "section_title": "3.8.2.4. Update Reporting calendar for TV/SI on a yearly basis [Updated CR #252]",
+    "start_page": 126
+  },
+  {
+    "section_title": "3.9 Expression of interest on indices Management",
+    "start_page": 128
+  },
+  {
+    "section_title": "3.9.1 Use case Overview",
+    "start_page": 128
+  },
+  {
+    "section_title": "3.9.2 Collect expression of interest on indices",
+    "start_page": 128
+  },
+  {
+    "section_title": "3.10 Additional Reference data distribution",
+    "start_page": 131
+  },
+  {
+    "section_title": "3.10.1 Use cases overview",
+    "start_page": 131
+  },
+  {
+    "section_title": "3.10.2 Distribute LEI Full file [Updated CR #250]",
+    "start_page": 131
+  },
+  {
+    "section_title": "3.10.3 Create and distribute Country Full file",
+    "start_page": 132
+  },
+  {
+    "section_title": "3.10.4 Create and distribute Currency Full file",
+    "start_page": 133
+  },
+  {
+    "section_title": "3.10.5 Create and distribute MIC Full file [Updated CR #279]",
+    "start_page": 134
+  },
+  {
+    "section_title": "3.10.6 Create and distribute CFI Full file",
+    "start_page": 135
+  },
+  {
+    "section_title": "3.10.7 Create and distribute Expression of interest on indices file",
+    "start_page": 136
+  },
+  {
+    "section_title": "3.10.8 Create and distribute non-working days file",
+    "start_page": 137
+  },
+  {
+    "section_title": "3.10.9 Create and distribute the previous version of LEI Full file (v2.1) [Updated CR #250]",
+    "start_page": 138
+  },
+  {
+    "section_title": "3.10.10. Create and distribute the previous version of MIC Full file (v1.0) [Updated CR #279]",
+    "start_page": 139
+  },
+  {
+    "section_title": "3.11 Monitoring",
+    "start_page": 140
+  },
+  {
+    "section_title": "3.11.1 Use case Overview",
+    "start_page": 140
+  },
+  {
+    "section_title": "3.11.2 Missing/Incomplete Report Notifications",
+    "start_page": 140
+  },
+  {
+    "section_title": "3.11.3 Monthly report generation for NCAs delegating data collection",
+    "start_page": 143
+  },
+  {
+    "section_title": "3.12 System Administration",
+    "start_page": 145
+  },
+  {
+    "section_title": "3.12.1 Use case Overview",
+    "start_page": 145
+  },
+  {
+    "section_title": "3.12.2 User management",
+    "start_page": 145
+  },
+  {
+    "section_title": "3.12.3 System monitoring",
+    "start_page": 146
+  },
+  {
+    "section_title": "3.12.3.1 Process monitoring",
+    "start_page": 146
+  },
+  {
+    "section_title": "3.12.3.2 File management monitoring",
+    "start_page": 147
+  },
+  {
+    "section_title": "3.12.4 System configuration",
+    "start_page": 148
+  },
+  {
+    "section_title": "3.12.4.1 Overview",
+    "start_page": 148
+  },
+  {
+    "section_title": "3.12.4.2 Update internal reference data table",
+    "start_page": 148
+  },
+  {
+    "section_title": "3.12.4.3 Update internal tables related to CFI codes",
+    "start_page": 149
+  },
+  {
+    "section_title": "3.12.4.4 Update ESMA attributes in ISO reference data table",
+    "start_page": 150
+  },
+  {
+    "section_title": "3.12.4.5 Update ESMA attributes in Country reference data table",
+    "start_page": 151
+  },
+  {
+    "section_title": "3.12.4.6 Update ESMA attributes in MIC reference and Trading Venue Mapping data tables according to the Authorised Entities Interface",
+    "start_page": 152
+  },
+  {
+    "section_title": "3.12.4.7 Authorised Entities User interface for reviewing and acting on proposed MIC updates",
+    "start_page": 153
+  },
+  {
+    "section_title": "4 Interfaces",
+    "start_page": 154
+  },
+  {
+    "section_title": "4.1 Interface with Transparency System",
+    "start_page": 154
+  },
+  {
+    "section_title": "4.1.1 Provide (ISIN, MIC) active at least one day during a given time period",
+    "start_page": 154
+  },
+  {
+    "section_title": "4.1.2 Get yearly turnover data for equity instruments for a given year",
+    "start_page": 155
+  },
+  {
+    "section_title": "4.1.3 Provide the list of (MIC, Field 11, Field 12) related to a given ISIN",
+    "start_page": 155
+  },
+  {
+    "section_title": "4.1.4 Provide the list of (ISIN, MIC, Field 11, Field 12, RCA) active on a given day",
+    "start_page": 156
+  },
+  {
+    "section_title": "4.1.5 Provide the MIC with earliest Field 11 for a given ISIN",
+    "start_page": 157
+  },
+  {
+    "section_title": "4.2 FIRDS Reference Data view",
+    "start_page": 158
+  },
+  {
+    "section_title": "4.3 FIRDS Reporting Calendar view",
+    "start_page": 158
+  },
+  {
+    "section_title": "4.4 Interface with DIFEA",
+    "start_page": 159
+  },
+  {
+    "section_title": "4.5 Interface with ESMA Registers [Updated CR #284]",
+    "start_page": 159
+  },
+  {
+    "section_title": "5 XML Messages",
+    "start_page": 162
+  },
+  {
+    "section_title": "5.1 Instrument Reference Data",
+    "start_page": 162
+  },
+  {
+    "section_title": "5.2 Additional Reference Data",
+    "start_page": 163
+  },
+  {
+    "section_title": "6 Data Structure",
+    "start_page": 164
+  },
+  {
+    "section_title": "6.1 Reporting Files Table",
+    "start_page": 164
+  },
+  {
+    "section_title": "6.2 NCA reference data table",
+    "start_page": 165
+  },
+  {
+    "section_title": "6.3 CFI / RCA rule mapping table",
+    "start_page": 166
+  },
+  {
+    "section_title": "6.4 CFI-based validations table",
+    "start_page": 166
+  },
+  {
+    "section_title": "6.5 Expression of interest on Indices reference data table",
+    "start_page": 168
+  },
+  {
+    "section_title": "6.6 Trading venue mapping view",
+    "start_page": 169
+  },
+  {
+    "section_title": "6.7 Reporting Flow view",
+    "start_page": 170
+  },
+  {
+    "section_title": "6.8 Instrument yearly turnover view",
+    "start_page": 171
+  },
+  {
+    "section_title": "6.9 RTS23 Fields table",
+    "start_page": 172
+  },
+  {
+    "section_title": "6.10 Additional Field table",
+    "start_page": 177
+  },
+  {
+    "section_title": "6.11 Rejection statistics table",
+    "start_page": 178
+  },
+  {
+    "section_title": "6.12 Rejected records table",
+    "start_page": 178
+  },
+  {
+    "section_title": "6.13 Yearly RCA reassessment input data table",
+    "start_page": 179
+  },
+  {
+    "section_title": "6.14 RCA_MIC adjustments data table",
+    "start_page": 179
+  },
+  {
+    "section_title": "6.15 RCA_MIC adjustments error data table",
+    "start_page": 180
+  },
+  {
+    "section_title": "6.16 Set TERMINATION_DATE error data table",
+    "start_page": 181
+  },
+  {
+    "section_title": "6.17 Set TERMINATION_DATE data table",
+    "start_page": 181
+  },
+  {
+    "section_title": "6.18 MIC_UPREG_STAGING data table",
+    "start_page": 182
+  },
+  {
+    "section_title": "7 Annex 1a: Transmission Validation Rules",
+    "start_page": 183
+  },
+  {
+    "section_title": "8 Annex 1b: Format Validation Rules",
+    "start_page": 184
+  },
+  {
+    "section_title": "9 Annex 1c: Reference Data Content and Consistency Validation Rules",
+    "start_page": 185
+  },
+  {
+    "section_title": "10 Annex 1d: Non-working Days Content Validation Rules",
+    "start_page": 190
+  },
+  {
+    "section_title": "11 Reminder Message code and description",
+    "start_page": 190
+  },
+  {
+    "section_title": "12 Annex 2: File naming conventions",
+    "start_page": 191
+  },
+  {
+    "section_title": "13 Annex 3 Business Application header",
+    "start_page": 195
+  },
+  {
+    "section_title": "14 Annex 4 Reporting calendar",
+    "start_page": 198
+  },
+  {
+    "section_title": "14.1 Reporting Calendar Table",
+    "start_page": 198
+  },
+  {
+    "section_title": "14.2 TV/SI reporting table",
+    "start_page": 199
+  },
+  {
+    "section_title": "15 Annex 5 ISO reference data tables",
+    "start_page": 200
+  },
+  {
+    "section_title": "15.1 Country reference data table",
+    "start_page": 200
+  },
+  {
+    "section_title": "15.2 Currency reference data table",
+    "start_page": 201
+  },
+  {
+    "section_title": "15.3 MIC reference data table",
+    "start_page": 202
+  },
+  {
+    "section_title": "15.4 List of valid CFI codes table",
+    "start_page": 204
+  },
+  {
+    "section_title": "15.5 LEI reference data table",
+    "start_page": 205
+  },
+  {
+    "section_title": "16 Annex 6 Scenarios of Instrument reference data reporting and distribution",
+    "start_page": 206
+  },
+  {
+    "section_title": "16.1 Modified instrument reported on time",
+    "start_page": 206
+  },
+  {
+    "section_title": "16.2 Modified instrument reported late",
+    "start_page": 208
+  },
+  {
+    "section_title": "16.3 Terminated instrument reported on time",
+    "start_page": 210
+  },
+  {
+    "section_title": "16.4 Terminated instrument reported late",
+    "start_page": 212
+  },
+  {
+    "section_title": "16.5 Cancelled instrument",
+    "start_page": 214
+  }
+]
