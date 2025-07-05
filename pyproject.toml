@@ -3,4 +3,19 @@ name = "rag-strategies"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "docling>=2.40.0",
+    "faiss-cpu>=1.11.0",
+    "fpdf2>=2.8.3",
+    "google>=3.0.0",
+    "google-genai>=1.24.0",
+    "httpx>=0.28.1",
+    "langchain>=0.3.26",
+    "langchain-community>=0.3.27",
+    "notebook>=7.4.4",
+    "protobuf==6.31.1",
+    "pypdf>=5.7.0",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.1.1",
+    "sentence-transformers>=5.0.0",
+]

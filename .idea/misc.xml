@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="uv (rag-strategies)" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="uv (rag-strategies)" project-jdk-type="Python SDK" />
 </project>
